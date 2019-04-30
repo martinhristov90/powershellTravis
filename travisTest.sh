@@ -4,6 +4,8 @@
 output=$(pwsh -f "${env:TRAVIS_BUILD_DIR}/hello.ps1")
 
 # we compare output to "hello"
+echo $output
+
 if [ "${output}" == "hello" ]; then
   # if output match all good
   echo GOOD: Test Pass
