@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # This line executes the script that needs to be tests and stores the out in the# variable "output"
-output=$(pwsh -f "${env:TRAVIS_BUILD_DIR}/hello.ps1")
+output=$(pwsh -f "hello.ps1")
 
 # we compare output to "hello"
 echo $output
