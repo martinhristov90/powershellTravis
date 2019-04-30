@@ -4,8 +4,6 @@
 output=$(pwsh -f "hello.ps1")
 
 # we compare output to "hello"
-echo $output
-
 if [ "${output}" == "hello" ]; then
   # if output match all good
   echo GOOD: Test Pass
